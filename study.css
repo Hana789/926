@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+/* 画面幅が768px以上のとき */
+@media screen and (min-width: 768px) {
+  /* PC用のスタイルを指定する */
+/* 基本 */
+body {
+    margin: 0;
+    background-color: #fff;
+   
+}
+h1, h1, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.google-fonts {
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.google-fonts2 {
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+}
+.w-container {
+    width: min(92%, 1166px);
+    margin: auto;
+  }
+a {
+  text-decoration:none;}
+  
+  /* ヘッダー */
+  header {
+    background-color: #fff;
+    height: 60px;
+    position: sticky; 
+    top: 0; 
+    z-index: 10;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+  .header-container span {
+    font-size: 15px;
+  }
+  .head-title {
+    color: #000;
+    font-size: 28px;
+  }
+  .header-container h1{
+    margin-right: auto;
+  }
+  .head-title:hover{
+    color: antiquewhite;
+  }
+  .Japanese:hover {
+    color: #9a009f;
+    border-bottom: 2px dashed #9a009f;
+  }
+  .Math:hover {
+    color: #5100ff;
+    border-bottom: 2px dashed #5100ff;
+  }
+  .English:hover {
+    color: #9d0000;
+    border-bottom: 2px dashed #9d0000;
+  }
+  .Social:hover {
+    color: #ff9900;
+    border-bottom: 2px dashed #ff9900;
+  }
+  .Science:hover {
+    color: #27c400;
+    border-bottom: 2px dashed #27c400;
+  }
+  .Test:hover {
+    color: #000;
+    border-bottom: 2px dashed #000;
+  }
+  .header-nav>a {
+    color: rgb(96, 96, 96);
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+
+  /* ヒーロー */
+.hero {
+    background: url(title.jpg) no-repeat;
+    height: 450px;
+    background-size: cover;
+    margin-bottom: 90px;
+    background-position-y: -250px; 
+}
+.hero-container {
+  position: relative;
+}
+.hero-container h2 {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    line-height: 1;
+}
+
+/* メイン */
+.site-description {
+  margin-bottom: 90px;
+}
+.site-container {
+    display: flex;
+}
+.aside-container {
+  width: 210px;
+    margin-right: 5px;
+}
+.subject-menu li {
+    list-style:none
+}
+.description {
+  background-color: #d4c58c;
+  padding: 30px 35px;
+  border-radius: 5px;
+}
+.underline {
+    border-bottom:  1.5px solid #ff0000;
+}
+.grade-menu a {
+  color: #000;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.Jp:hover {
+  color: #9a009f;
+  border-bottom: 2px dashed #9a009f;
+}
+.Mt:hover {
+  color: #5100ff;
+  border-bottom: 2px dashed #5100ff;
+}
+.En:hover {
+  color: #9d0000;
+  border-bottom: 2px dashed #9d0000;
+}
+.So:hover {
+  color: #ff9900;
+  border-bottom: 2px dashed #ff9900;
+}
+.Sc:hover {
+  color: #27c400;
+  border-bottom: 2px dashed #27c400;
+}
+
+/* フッター */
+footer {
+  background-color: #000;
+  height: 80px;
+}
+.footer-container {
+  text-align: right;
+  color: #fff;
+}
+footer a {
+  font-size: 12px;
+  margin-right: 21px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+
+
+/* subject.html用のCSS */
+.hero2 {
+  background: url(title2.jpg) no-repeat;
+  height: 300px;
+  background-size: cover;
+  margin-bottom: 90px;
+  background-position-y: -360px; 
+}
+.table-container {
+  display: flex;
+  justify-content: space-between;
+}
+.g {
+  padding: 15px;
+  width: 300px;
+  margin-right: 15px;
+  background-color: #d4c58c;
+  border-radius: 5px;
+}
+.g p {
+  font-size: 21px;
+}
+#mini-menu, #nav-menu {
+  display: none;
+}
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 767px) {
+  /* スマートフォン用のスタイルを指定する */
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+  header {
+    height: 90px;
+    position: static;
+  }
+  .header-face {
+    display: inline-block;
+  }
+  .header-nav, .grade-menu {
+      display: none;
+  }
+  #mini-menu {
+    float: right;
+    padding: 0;
+  }
+  #nav-menu {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 110;
+  }
+/* ×ボタン */
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #menu {
+    display: block;
+  }
+}
