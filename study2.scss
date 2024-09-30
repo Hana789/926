@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+// ページ全体にかかわるCSS
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.nav-menu, .about {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.w-container {
+    width: min(92%, 1166px);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+// ____________________________________________________________________________
+
+header {
+    height: 60px;
+    @media (min-width: 768px) {
+      height: 75px;
+}
+}
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #nav-sp {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 482px;
+        background-color: #fff;
+        ul>li {
+          text-align: right;
+        }
+        .ikon, .sub1, .sub2, .sub3, .sub4, .sub5, .sub6 {
+          line-height: 50px;
+          color: #303030;
+          margin-right: 32px;
+          font-size: 30px;
+        }
+
+    }
+    .bi-x-lg {
+      font-weight: bold;
+      font-size: 39px;
+      position: absolute;
+      top:10px;
+      left: 15px;
+      @media (min-width: 768px) {
+        display: none;
+        }
+    }
+    .bi-list {
+        font-weight: bold;
+        font-size: 45px;
+        @media (min-width: 768px) {
+          display: none;
+        }
+    }
+    .nav-menu {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+   
+  }
+
+  
+  .sub1:hover {
+    color: #9a009f;
+    border-bottom: 2px dashed #9a009f;
+  }
+  .sub2:hover {
+    color: #5100ff;
+    border-bottom: 2px dashed #5100ff;
+  }
+  .sub5:hover {
+    color: #9d0000;
+    border-bottom: 2px dashed #9d0000;
+  }
+  .sub4:hover {
+    color: #ff9900;
+    border-bottom: 2px dashed #ff9900;
+  }
+  .sub3:hover {
+    color: #27c400;
+    border-bottom: 2px dashed #27c400;
+  }
+  .sub6:hover {
+    color: #000;
+    border-bottom: 2px dashed #000;
+  }
+
+
+//   ヒーロー＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+.hero {
+    background: url(title22.jpg)top/500%;
+    height: 450px;
+    background-size: cover;
+    margin-bottom: 10%;
+    @media (min-width: 768px) {
+      background: url(title2.jpg);
+      background-position-y: -430px;
+}
+}
+
+
+// メイン＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+.main-container {
+  margin: 28px;
+  @media (min-width: 768px) {
+    display: flex;
+}
+    .aside-menu {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+    }
+    }
+    .right-wrap p {
+      font-size: 11px;
+    }
+    .about {
+      font-size: 18px;
+        display: inline-block;
+        background: linear-gradient(transparent 80% , rgb(255, 0, 0) 80%);
+    }
+}
+
+
+// フッター＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+footer {
+  background: url(foot2.png) center;
+  height: 80px;
+  background-color: #000;
+  ul {
+    text-align: center;
+  }
+ ul>li>a {
+  color: antiquewhite;
+  font-size: 10px;
+ }
+}
